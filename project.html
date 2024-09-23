@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals Finder Project</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="project.html" style="color: white;"><i class="fa-solid fa-house"></i></a>
+            <div class="logo">MEAL FINDER</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="menu" class="menu"></div>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="search-bar">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search recipes here...">
+            <button class="search-button" onclick="searchRecipes()">
+                <span>Search </span>
+            </button>
+        </div>
+        <h2>What are your favorite cuisines?</h2>
+        <p>PERSONALIZE YOUR EXPERIENCE</p>
+    </section>
+    
+    <div id="categories-container">
+      <div id="categories"></div>
+      <div id="meals"></div>
+  </div>
+  
+    <!-- <div id="meals"></div> -->
+    <div id="meal-details">
+        <h2>categories</h2>
+
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
